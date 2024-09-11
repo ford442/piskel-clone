@@ -4,7 +4,7 @@ export default function initDefault(components) {
   } = components;
 
   if (!localStorage.getItem('landing-is-visited')) {
-    window.location.href = '/landing/index.html';
+    window.location.href = './landing/index.html';
   } else if (localStorage.getItem('piskel-session-store')) {
     storage.loadSession(preview, tools, canvasSize);
   } else {
